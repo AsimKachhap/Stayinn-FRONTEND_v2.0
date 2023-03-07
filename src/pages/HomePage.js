@@ -6,6 +6,14 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { BsPersonCircle } from "react-icons/bs";
 
 const HomePage = () => {
+  navigator.geolocation.getCurrentPosition(
+    function (position) {
+      console.log(position);
+    },
+    function () {
+      alert("Could not get your Position.");
+    }
+  );
   return (
     <div className="">
       <section className="Topbar px-10 py-4 flex flex-row content-center items-center justify-evenly border-b-[1px] border-black ">
