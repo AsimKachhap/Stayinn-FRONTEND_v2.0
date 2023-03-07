@@ -31,7 +31,7 @@ const HomePage = () => {
             <BsPersonCircle className="text-2xl font-medium" />
           </div>
         </section>
-        <div className="flex flex-row gap-2 ">
+        <div className="grid grid-cols-2 gap-2 ">
           <div>Hotel Cards</div>
           <div>Map</div>
         </div>
