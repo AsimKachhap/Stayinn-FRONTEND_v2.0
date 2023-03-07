@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
+      <Routes className="px-10">
         <Route path="/" element={<HomePage />} />
       </Routes>
       <Footer />
