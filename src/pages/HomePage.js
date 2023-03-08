@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../components/Footer";
+import Map from "../components/Map";
 import { BiSearch } from "react-icons/bi";
 import { GoLocation } from "react-icons/go";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -41,7 +42,9 @@ const HomePage = () => {
       <div className="main-div px-10">
         <div className="grid grid-cols-2 gap-2 ">
           <div>Hotel Cards</div>
-          <div>Map</div>
+          <div>
+            <Map />
+          </div>
         </div>
       </div>
       <Footer />
