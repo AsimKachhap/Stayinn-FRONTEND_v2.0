@@ -1,6 +1,6 @@
 import React from "react";
-import Footer from "../components/Footer";
 import Map from "../components/Map";
+import HotelCard from "../components/HotelCard";
 import { BiSearch } from "react-icons/bi";
 import { GoLocation } from "react-icons/go";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -46,8 +46,19 @@ const HomePage = () => {
             <Map />
           </div>
         </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2">
+          <HotelCard></HotelCard>
+          <HotelCard></HotelCard>
+          <HotelCard></HotelCard>
+          <HotelCard></HotelCard>
+          <HotelCard></HotelCard>
+          <HotelCard></HotelCard>
+          <HotelCard></HotelCard>
+          <HotelCard></HotelCard>
+          <HotelCard></HotelCard>
+          <HotelCard></HotelCard>
+        </div>
       </div>
-      <Footer />
     </div>
   );
 };
