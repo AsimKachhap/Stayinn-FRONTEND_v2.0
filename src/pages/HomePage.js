@@ -41,7 +41,7 @@ const HomePage = () => {
       </section>
       <div className="main-div px-10">
         <div className="grid grid-cols-2 gap-2 ">
-          <div>Hotel Cards</div>
+          <div>Search Filter and Sorting</div>
           <div className="h-[60vh] bg-rose-500 ">
             <Map />
           </div>
