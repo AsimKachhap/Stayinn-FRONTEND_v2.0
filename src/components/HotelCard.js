@@ -12,7 +12,9 @@ const HotelCard = () => {
 
   return (
     <div className="flex flex-col rounded-md">
-      <div className=" object-cover "></div>
+      <div className=" object-cover ">
+        <img src={hotel.displayImage} alt="hotel" />
+      </div>
       <div></div>
     </div>
   );
