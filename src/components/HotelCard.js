@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
+import { MdLocationOn } from "react-icons/md";
 
 const HotelCard = () => {
   const hotel = {
@@ -15,12 +16,21 @@ const HotelCard = () => {
   const [isLiked, setIsLiked] = useState(false);
 
   return (
-    <div className="flex flex-col rounded-md">
-      <div className=" object-cover ">
-        <img src={hotel.displayImage} alt="hotel" />
+    <div className="flex flex-col bg-[#f9f9f9] border-[1px] border-black rounded-md">
+      <div className=" object-cover rounded-t-md ">
+        <img className="rounded-t-md" src={hotel.displayImage} alt="hotel" />
       </div>
       <div className="flex flex-row justify-between p-3">
-        <div>1</div>
+        <div>
+          <h3 className="text-2xl font-bold">{hotel.name}</h3>
+          <div className="flex flex-row items-center ">
+            <MdLocationOn className="text-yellow-500 text-2xl -ml-[8px]" />
+            <div>{hotel.location}</div>
+          </div>
+          <p className=" text-neutral-500 uppercase font-semibold ">
+            Starts at &#8377; {hotel.startingPrice} / Night
+          </p>
+        </div>
 
         <div
           className={`h-[35px] w-[35px]  z-10 cursor-pointer rounded-md flex items-center justify-center ${
